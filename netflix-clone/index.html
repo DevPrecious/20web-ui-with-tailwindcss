@@ -12,10 +12,10 @@
 
 <body class="bg-black">
     <div>
-        <div class="h-[500px] w-full">
-            <img src="images/bg.jpeg" class="blur-[1px]" alt="">
+        <div class="lg:h-[720px] lg:w-full">
+            <img src="images/bg.jpeg" class="blur-[1px] lg:h-[718px] h-[600px] object-cover" alt="">
             <div class="absolute grid top-0 bg-transparent w-full">
-                <div class="px-6 bg-gradient-to-t from-[#160705] h-[720px] opacity- to-transparent">
+                <div class="px-6 bg-gradient-to-t from-[#160705] lg:h-[720px] opacity- to-transparent">
                     <div class="flex items-center justify-between">
                         <img src="images/logo.png" class="w-64 h-32" alt="">
                         <div class="">
@@ -23,22 +23,30 @@
                         </div>
                     </div>
                     <div class="grid py-28 space-y-4 place-items-center">
-                        <span class="text-5xl tracking-wide text-white font-bold text-center">
+                        <span class="hidden md:block text-5xl tracking-wide text-white font-bold text-center">
                             Unlimited movies, TV <br> shows, and more.
                         </span>
-                        <span class="text-white text-center text-3xl">Watch anywhere. Cancel anytime.</span>
-                        <span class="text-center text-white text-xl">
+                        <span class="md:hidden text-2xl tracking-wide text-white text-center">
+                            Unlimited movies, TV shows, and <br> more.
+                        </span>
+                        <span class="text-white text-center text-md lg:text-3xl">Watch anywhere. Cancel anytime.</span>
+                        <span class="hidden md:block text-center text-white text-xl">
                             Ready to watch? Enter your email to create or restart your membership.
                         </span>
-                        <div class="flex">
-                            <div class="flex">
-                                <input type="text" class="border bg-white w-[400px] p-3.5" placeholder="Email Address">
-                                <div class="flex items-center bg-[#E50E14] text-white p-3.5 px-5">
-                                    <span class="text-2xl">Get Started</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                                    </svg>
+                        <span class="md:hidden text-center text-white text-md">
+                            Ready to watch? Enter your email <br> to create or restart your membership.
+                        </span>
+                        <div class="lg:flex">
+                            <div class="lg:flex space-y-3 lg:space-y-0">
+                                <input type="text" class="border bg-white lg:w-[400px] w-[400px] p-2 lg:p-3.5" placeholder="Email Address">
+                                <div class="grid place-items-center">
+                                    <div class="flex items-center bg-[#E50E14] lg:w-[200px] w-[150px] text-white p-2 lg:p-3.5 px-5">
+                                        <span class="lg:text-2xl">Get Started</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -47,39 +55,50 @@
             </div>
         </div>
     </div>
-    <div class="border border-4 mt-56 border-[#272727] w-full"></div>
-    <div class="flex px-28 py-28 items-center">
-        <div class="w-1/2">
-            <span class="text-4xl text-white font-bold">
+    <div class="border border-4 lg:mt-2 mt-16 border-[#272727] w-full"></div>
+    <div class="lg:flex grid place-items-center py-10 lg:px-28 lg:py-28 lg:items-center">
+        <div class="lg:w-1/2 text-center">
+            <span class="lg:text-4xl text-2xl text-white lg:font-bold">
                 Enjoy on your TV.
             </span> <br>
-            <span class="text-2xl text-white">
+            <span class="lg:text-2xl text-sm text-white">
                 Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
             </span>
         </div>
-        <div class="w-1/2 px-6">
+        <div class="lg:w-1/2 lg:px-6">
             <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" class="" alt="">
-            <div class="absolute top-[930px] right-[240px] w-[300px] z-0">
+            <div class="hidden lg:block absolute top-[930px] right-[240px] w-[300px] z-0">
+                <video autoplay class=""
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"></video>
+            </div>
+            <div class="lg:hidden absolute top-[860px] left-[60px] w-[300px] z-0">
                 <video autoplay class=""
                     src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"></video>
             </div>
         </div>
     </div>
     <div class="border border-4  border-[#272727] w-full"></div>
-    <div class="flex py-20 items-center space-x-32">
+    <div class="lg:flex py-10 lg:flex-row flex flex-col flex-col-reverse lg:py-20 lg:items-center lg:space-x-32">
         <div class="px-8">
-            <img src="images/el.jpeg" class="w-[500px]" alt="">
+            <img src="images/el.jpeg" class="w-[400px] lg:w-[500px]" alt="">
         </div>
-        <div>
-            <span class="text-5xl text-white font-bold">
+        <div class="text-center lg:text-left">
+            <span class="hidden md:block text-5xl text-white lg:font-bold">
                 Download your shows <br> to watch offline.
-            </span> <br>
-            <span class="text-2xl text-white">
+            </span>
+            <span class="md:hidden text-2xl text-white">
+                Download your shows to watch <br> offline.
+            </span>
+            <br>
+            <span class="hidden md:block text-2xl text-white">
                 Save your favorites easily and always have <br> something to watch.
             </span>
+            <span class="md:hidden text-md text-white">
+                Save your favorites easily and always have something <br> to watch.
+            </span>
         </div>
-        <div class="absolute top-[1650px]">
-            <div class="border p-4 bg-black rounded-md w-[300px]">
+        <div class="absolute lg:top-[1650px] lg:left-0 left-[80px]">
+            <div class="border lg:p-4 p-2 bg-black rounded-lg w-[300px]">
                 <div class="flex items-center justify-between">
                     <div class="flex space-x-3">
                         <img src="images/st.png" class="w-[50px]" alt="">
@@ -98,29 +117,34 @@
         </div>
     </div>
     <div class="border border-4  border-[#272727] w-full"></div>
-    <div class="px-20 py-20">
-        <div class="flex flex-col justify-start space-y-4">
-            <div>
-                <span class="text-4xl text-white">
+    <div class="lg:px-20 lg:py-20 px-10 py-10">
+        <div class="flex flex-col lg:justify-start space-y-4">
+            <div class="lg:text-left text-center">
+                <span class="lg:text-4xl text-2xl text-white">
                     Watch everywhere.
                 </span>
             </div>
             <div>
-                <span class="text-white text-2xl">
+                <span class="hidden lg:block text-white text-2xl">
                     Stream unlimited movies and TV shows on <br> your phone, tablet, laptop, and TV.
                 </span>
+                <div class="text-center">
+                    <span class="lg:hidden text-white text-md">
+                        Stream unlimited movies and TV shows on your <br> phone, tablet, laptop, and TV.
+                    </span>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="border border-4  border-[#272727] w-full"></div>
-    <div class="flex py-20 items-center ">
+    <div class="lg:flex flex flex-col items-center flex-col-reverse lg:flex-row lg:py-20 py-10 lg:items-center ">
         <div>
             <img src="images/kids.png" alt="">
         </div>
-        <div class="flex flex-col space-y-3">
-            <span class="text-5xl text-white">Create profiles for kids.</span>
-            <span class="text-2xl text-white">
+        <div class="flex text-center flex-col space-y-3">
+            <span class="lg:text-5xl text-2xl text-white">Create profiles for kids.</span>
+            <span class="lg:text-2xl text-white">
                 Send kids on adventures with their favorite <br> characters in a space made just for them— <br> free
                 with your membership.
             </span>
@@ -128,47 +152,47 @@
     </div>
 
     <div class="border border-4  border-[#272727] w-full"></div>
-    <div class="py-20">
+    <div class="lg:py-20 py-10">
         <div class="text-center">
-            <span class="text-5xl text-white">Frequently Asked Questions</span>
+            <span class="lg:text-5xl text-white text-2xl">Frequently Asked Questions</span>
         </div>
         <div class="pt-8 grid space-y-3 place-items-center">
-            <div class="bg-[#303030] w-[800px] flex items-center justify-between text-white p-4 pl-3">
+            <div class="bg-[#303030] w-full lg:w-[800px] flex items-center justify-between text-white p-4 pl-3">
                 <span class="text-3xl">What is Netflix?</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                 </svg>
             </div>
-            <div class="bg-[#303030] w-[800px] flex items-center justify-between text-white p-4 pl-3">
+            <div class="bg-[#303030] w-full lg:w-[800px] flex items-center justify-between text-white p-4 pl-3">
                 <span class="text-3xl">How much does Netflix cost?</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                 </svg>
             </div>
-            <div class="bg-[#303030] w-[800px] flex items-center justify-between text-white p-4 pl-3">
+            <div class="bg-[#303030] w-full lg:w-[800px] flex items-center justify-between text-white p-4 pl-3">
                 <span class="text-3xl">Where can i watch?</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                 </svg>
             </div>
-            <div class="bg-[#303030] w-[800px] flex items-center justify-between text-white p-4 pl-3">
+            <div class="bg-[#303030] w-full lg:w-[800px] flex items-center justify-between text-white p-4 pl-3">
                 <span class="text-3xl">How do i cancel?</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                 </svg>
             </div>
-            <div class="bg-[#303030] w-[800px] flex items-center justify-between text-white p-4 pl-3">
+            <div class="bg-[#303030] w-full lg:w-[800px] flex items-center justify-between text-white p-4 pl-3">
                 <span class="text-3xl">What can i watch on Netflix?</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                 </svg>
             </div>
-            <div class="bg-[#303030] w-[800px] flex items-center justify-between text-white p-4 pl-3">
+            <div class="bg-[#303030] w-full lg:w-[800px] flex items-center justify-between text-white p-4 pl-3">
                 <span class="text-3xl">Is netflix good for kids?</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -177,18 +201,23 @@
             </div>
         </div>
         <div class="pt-8 grid place-items-center space-y-3">
-            <span class="text-center text-white text-md">
+            <span class="hidden md:block text-center text-white text-xl">
                 Ready to watch? Enter your email to create or restart your membership.
             </span>
-            <div class="flex">
-                <div class="flex">
-                    <input type="text" class="border bg-white w-[400px] p-3.5" placeholder="Email Address">
-                    <div class="flex items-center bg-[#E50E14] text-white p-3.5 px-5">
-                        <span class="text-2xl">Get Started</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                        </svg>
+            <span class="md:hidden text-center text-white text-md">
+                Ready to watch? Enter your email <br> to create or restart your membership.
+            </span>
+            <div class="lg:flex">
+                <div class="lg:flex space-y-3 lg:space-y-0">
+                    <input type="text" class="border bg-white lg:w-[400px] w-[400px] p-2 lg:p-3.5" placeholder="Email Address">
+                    <div class="grid place-items-center">
+                        <div class="flex items-center bg-[#E50E14] lg:w-[200px] w-[150px] text-white p-2 lg:p-3.5 px-5">
+                            <span class="lg:text-2xl">Get Started</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,11 +225,29 @@
     </div>
 
     <div class="border border-4  border-[#272727] w-full"></div>
-    <div class="px-64 py-16">
+    <div class="lg:px-64 px-10 py-10 lg:py-16">
         <div>
             <span class="text-sm text-[#737373]">Questions? Contact us.</span>
         </div>
-        <div class="flex pt-3 justify-between">
+        <div class="md:hidden flex space-x-28 pt-6">
+            <div class="grid space-y-8">
+                <div class="grid space-y-3">
+                    <span class="text-sm text-[#737373]">FAQ</span>
+                    <span class="text-sm text-[#737373]">Investor Relations</span>
+                    <span class="text-sm text-[#737373]">Privacy</span>
+                    <span class="text-sm text-[#737373]">Speed Test</span>
+                    <span class="text-sm text-[#737373]">Only on Netflix</span>
+                </div>
+                <span class="text-sm text-[#737373]">Netflix Nigeria</span>
+            </div>
+            <div class="grid space-y-2">
+                <span class="text-sm text-[#737373]">Help Center</span>
+                <span class="text-sm text-[#737373]">Jobs</span>
+                <span class="text-sm text-[#737373]">Cookie Preferences</span>
+                <span class="text-sm text-[#737373]">Legal Notices</span>
+            </div>
+        </div>
+        <div class="hidden md:flex pt-3 justify-between">
             <div class="grid space-y-8">
                 <div class="grid space-y-3">
                     <span class="text-sm text-[#737373]">FAQ</span>
